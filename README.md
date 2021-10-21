@@ -19,7 +19,8 @@ Sub 巨集1()
     Range("A5:A6").Select
     Selection.AutoFill Destination:=Range("A5:A54"), Type:=xlFillDefault
     Range("A5:A54").Select
-
+    
+    ActiveWorkbook.Queries("Table 6").Delete
     
     With ActiveSheet
     
